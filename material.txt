@@ -1,0 +1,8 @@
+使用指定圖片素材：
+Logo: https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png
+T-shirt 假圖: https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png
+實穿照 1: https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png
+實穿照 2: https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg
+實穿照 3: https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png
+實穿照 4: https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png
+訂閱 banner: https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png

@@ -1,0 +1,100 @@
+/* reset:start */
+html {
+  box-sizing: border-box;
+  /*設定 body 計算模式*/
+  scroll-behavior: smooth;
+  /* 設定網頁順暢滑動 */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* 清除瀏覽器預設 viewport */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+menu {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 0.9;
+  list-style: none;
+}
+
+table {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: initial;
+}
+
+/* 清除超連結預設底線 */
+a {
+  text-decoration: none;
+}
+/* reset:end */
+
+
+/* 共用專案樣式:start */
+:root {
+  /* color */
+  --main-background-color: #f6f7f8;
+  --header-background-color: #ffffffa5; /*a5指定半透明*/
+  --header-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  --navbar-brand-text-color: #111111;
+  --navbar-link-text-color: #111111;
+  --navbar-icon-text-color: #111111;
+  --select-border-color: gray;
+  --newsletter-title-text-color: #111111;
+  --newsletter-description-text-color: #111111;
+  --subscript-input-background-color: white;
+  --subscript-button-text-color: white;
+  --subscript-button-background-color: #000;
+  --footer-background-color: #f0f0f0;
+
+  --logo-url: "https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png";
+  --banner-url: "https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png";
+}
+
+
+
+html,
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: var(--main-background-color);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto 3rem auto;
+}
+
+.background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 共用專案樣式:end */

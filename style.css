@@ -66,17 +66,47 @@ a {
   --navbar-link-text-color: #111111;
   --navbar-icon-text-color: #111111;
   --select-border-color: gray;
+  --card-text-color: #111111;
   --newsletter-title-text-color: #111111;
   --newsletter-description-text-color: #111111;
   --subscript-input-background-color: white;
   --subscript-button-text-color: white;
   --subscript-button-background-color: #000;
+  --footer-text-color: #111111;
   --footer-background-color: #f0f0f0;
 
   --logo-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png");
 
 
   --banner-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
+}
+
+
+/* 實作 darkmode */
+[data-theme="dark"] {
+  /* color */
+  --main-background-color: #333333;
+  --header-background-color: #333333a5;
+  /*a5指定半透明*/
+  --header-box-shadow: 0px 2px 12px 0px rgba(255, 255, 255, 0.1);
+  --navbar-brand-text-color: #f6f7f8;
+  --navbar-link-text-color: #f6f7f8;
+  --navbar-icon-text-color: #f6f7f8;
+  --select-border-color: gray;
+  --card-text-color: #f6f7f8;
+  --newsletter-title-text-color: #333333;
+  --newsletter-description-text-color: #333333;
+  --subscript-input-background-color: white;
+  --subscript-button-text-color: white;
+  --subscript-button-background-color: #000;
+  --footer-text-color: #f6f7f8;
+  --footer-background-color: #333333;
+
+  --logo-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png");
+
+
+  --banner-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
+
 }
 
 
@@ -205,6 +235,7 @@ header {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: var(--card-text-color);
 }
 
 .selection-wrapper {
@@ -250,11 +281,13 @@ header {
 .card-text {
   margin-top: 1rem;
   text-align: center;
+  color: var(--card-text-color);
 }
 
 .card-title {
   margin-bottom: 0.2rem;
   font-weight: 400;
+
 }
 
 .card-description {
@@ -264,6 +297,7 @@ header {
 .pagination {
   margin-top: 5rem;
   text-align: center;
+  color: var(--card-text-color);
 }
 
 
@@ -274,8 +308,9 @@ header {
 }
 
 .newsletter-wrapper {
-  width: 100%;
+  width: 90%;
   height: 230px;
+  margin: 0 auto;
   background-image: var(--banner-url);
 
   display: grid;
@@ -350,5 +385,6 @@ footer {
   text-align: center;
   letter-spacing: 1px;
   line-height: 0.9;
+  color: var(--footer-text-color);
   background-color: var(--footer-background-color);
 }

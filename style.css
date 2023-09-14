@@ -227,7 +227,44 @@ header {
 
 
 /***** 制定 album 樣式 *****/
+.album-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 3rem 1.5rem;
+}
 
+ .card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  object-fit: cover;
+} 
+
+.card-text {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+}
+
+.card-description {
+  font-weight: 700;
+}
+
+.pagination {
+  margin-top: 5rem;
+  text-align: center;
+}
 
 
 /***** 制定 newsletter 樣式 *****/

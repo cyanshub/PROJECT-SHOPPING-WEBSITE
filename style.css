@@ -342,3 +342,13 @@ header {
 
 
 /***** 制定 footer 樣式 *****/
+footer {
+  width: 100%;
+  font-size: 0.2rem;
+  font-weight: 100;
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  background-color: var(--footer-background-color);
+}

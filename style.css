@@ -200,7 +200,30 @@ header {
 
 
 /***** 制定 selection 樣式 *****/
+.selection-title {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
 
+.selection-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.selection-wrapper select {
+  width: 70%;
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--select-border-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 
 /***** 制定 album 樣式 *****/

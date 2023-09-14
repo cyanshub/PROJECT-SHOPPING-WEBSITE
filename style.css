@@ -73,8 +73,10 @@ a {
   --subscript-button-background-color: #000;
   --footer-background-color: #f0f0f0;
 
-  --logo-url: "https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png";
-  --banner-url: "https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png";
+  --logo-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png");
+
+
+  --banner-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
 }
 
 
@@ -101,4 +103,113 @@ body {
 
 
 
+/***** 制定 header 樣式 *****/
+header {
+  /* 基本樣式 */
+  width: 100%;
+  height: 60px;
+  background-color: var(--header-background-color);
+  box-shadow: var(--header-box-shadow);
+  -webkit-box-shadow: var(--header-box-shadow);
+  -moz-box-shadow: var(--header-box-shadow);
 
+  /* 設定 position 定位 */
+  position: fixed;
+  z-index: 10;
+
+  /* 設定排版 */
+  display: grid;
+  grid-template-columns: 20px minmax(300px,3fr) 150px 20px;
+  grid-template-areas: ". brand icon .";
+}
+
+
+.nav {
+  display: none;
+  grid-area: nav-item;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: 40px;
+  background: var(--logo-url);
+  background-size: 100% 100%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar-brand-title {
+  color: var(--navbar-brand-text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.navbar-icon {
+  grid-area: icon;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+}
+
+.nav-icon {
+  color: var(--navbar-icon-text-color);
+}
+
+.navbar-brand {
+  grid-area: brand;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkmode-toggle {
+  display: none;
+}
+
+/***** 制定 header 樣式 (桌機板) *****/
+@media screen and (min-width:960px) {
+  header {
+    grid-template-columns: 20px 300px 2fr 300px 2fr 150px 20px;
+    grid-template-areas: ". brand . nav-item . icon";
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav-list {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 2rem;
+  }
+
+  .nav-link {
+    color: var(--navbar-link-text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .nav-item {
+    margin: 0 1.4rem 0 1.4rem;
+  }
+}
+
+
+/***** 制定 selection 樣式 *****/
+
+
+
+/***** 制定 album 樣式 *****/
+
+
+
+/***** 制定 newsletter 樣式 *****/
+
+
+
+
+/***** 制定 footer 樣式 *****/

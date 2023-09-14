@@ -268,7 +268,76 @@ header {
 
 
 /***** 制定 newsletter 樣式 *****/
+.newsletter .container {
+  width: 100%;
+  margin: 0 auto;
+}
 
+.newsletter-wrapper {
+  width: 100%;
+  height: 230px;
+  background-image: var(--banner-url);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.newsletter-title {
+  margin-bottom: 2rem;
+  color: var(--newsletter-title-text-color);
+  font-weight: 700;
+}
+
+.newsletter-description {
+  margin-top: 1rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.newsletter-description a {
+  color: var(--newsletter-description-text-color);
+  text-decoration: underline;
+}
+
+.subscript {
+  width: 30%;
+  min-width: 370px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: var(--subscript-input-background-color);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscript input {
+  all: unset;
+  background-color: var(--subscript-input-background-color);
+  width: 55%;
+  line-height: 100%;
+  height: 25px;
+  padding: 10px;
+  border: none;
+}
+
+.subscript button {
+  all: unset;
+  background-color: var(--subscript-button-background-color);
+  width: 90px;
+  height: 25px;
+  line-height: 100%;
+  padding: 10px 15px;
+  border-radius: 0 25px 25px 0;
+
+
+
+  color: var(--subscript-button-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 
 

@@ -153,7 +153,6 @@ header {
   grid-template-areas: ". brand icon .";
 }
 
-
 .nav {
   display: none;
   grid-area: nav-item;
@@ -287,7 +286,6 @@ header {
 .card-title {
   margin-bottom: 0.2rem;
   font-weight: 400;
-
 }
 
 .card-description {
@@ -342,7 +340,6 @@ header {
   padding-left: 20px;
   border-radius: 25px;
   background-color: var(--subscript-input-background-color);
-
   display: flex;
   justify-content: space-between;
 }
@@ -365,9 +362,6 @@ header {
   line-height: 100%;
   padding: 10px 15px;
   border-radius: 0 25px 25px 0;
-
-
-
   color: var(--subscript-button-text-color);
   font-size: 1rem;
   font-weight: 700;
